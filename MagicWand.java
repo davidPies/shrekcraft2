@@ -53,7 +53,7 @@ public class MagicWand
   
   public static Item block = new mcreator_magicWand.Projectile();
   static { 
-        Item.field_150901_e.func_148756_a(429, "magicWand", block); 
+        Item.field_150901_e.getObject(429, "magicWand", block); 
   }
   public static MagicWand instance = new MagicWand();
 	
@@ -61,18 +61,18 @@ public class MagicWand
     static class Projectile extends Item {
    		public mcreator_magicWand.ItemgGUN() {
         	this.func_77656_e(100);
-        	this.field_77777_bU = 1;
+        	this.setMaxStackSize(1);
         	this.func_77664_n();
-        	this.func_77655_b("magicWand");
-        	this.func_111206_d("Magic Wand");
-        	this.func_77637_a(CreativeTabs.field_78037_j);
+        	this.setUnlocalizedName("magicWand");
+        	this.setTextureName("Magic Wand");
+        	this.setCreativeTab(Tab.tab);
     	}
 
     	public int getDuration(ItemStack par1ItemStack) {
         	return 72000;
     	}
 
-    	public ItemStack func_77659_a(ItemStack par1ItemStack, World par2World, final EntityPlayer par3EntityPlayer) {
+    	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, final EntityPlayer par3EntityPlayer) {
         	boolean flag;
         	boolean bl = flag = par3EntityPlayer.field_71075_bZ.field_75098_d || EnchantmentHelper.func_77506_a((int)Enchantment.field_77342_w.field_77352_x, (ItemStack)par1ItemStack) > 0;
         	if (flag || par3EntityPlayer.field_71071_by.func_146028_b(mcreator_magicOrb.block)) {
