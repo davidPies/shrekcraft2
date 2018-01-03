@@ -60,9 +60,9 @@ public class MagicWand
 
     static class Projectile extends Item {
    		public mcreator_magicWand.ItemgGUN() {
-        	this.func_77656_e(100);
+        	this.setMaxDamage(100);
         	this.setMaxStackSize(1);
-        	this.func_77664_n();
+        	this.setFull3D();
         	this.setUnlocalizedName("magicWand");
         	this.setTextureName("Magic Wand");
         	this.setCreativeTab(Tab.tab);
@@ -80,11 +80,11 @@ public class MagicWand
             	EntityArrow entityarrow = new EntityArrow(par2World, (EntityLivingBase)par3EntityPlayer, f * 2.0f){
 
                 	public void func_70100_b_(EntityPlayer entitiy) {
-                    	super.func_70100_b_(entitiy);
-                    	int i = MathHelper.func_76128_c((double)(this.field_70121_D.field_72340_a + 0.001));
-                    	int j = MathHelper.func_76128_c((double)(this.field_70121_D.field_72338_b + 0.001));
+                    		super.func_70100_b_(entitiy);
+                    		int i = MathHelper.func_76128_c((double)(this.field_70121_D.field_72340_a + 0.001));
+                    		int j = MathHelper.func_76128_c((double)(this.field_70121_D.field_72338_b + 0.001));
                    		int k = MathHelper.func_76128_c((double)(this.field_70121_D.field_72339_c + 0.001));
-                    	World world = this.field_70170_p;
+                    		World world = this.field_70170_p;
                 	}
 
                 	public void func_70071_h_() {
