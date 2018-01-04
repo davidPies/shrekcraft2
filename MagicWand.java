@@ -68,7 +68,7 @@ public class MagicWand
         	this.setCreativeTab(Tab.tab);
     	}
 
-    	//public int getDuration(ItemStack par1ItemStack) {
+    	//public int getMaxItemUseDuration(ItemStack par1ItemStack) {
         //	return 72000;
     	//}
 
@@ -122,7 +122,7 @@ public class MagicWand
         	return par1ItemStack;
     	}
 
-    	public EnumAction func_77661_b(ItemStack par1ItemStack) {
+    	public EnumAction getItemUseAction(ItemStack par1ItemStack) {
         	return EnumAction.bow;
     	}
 
