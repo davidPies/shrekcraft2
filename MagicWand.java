@@ -53,7 +53,7 @@ public class MagicWand
   
   public static Item block = new mcreator_magicWand.Projectile();
   static { 
-        Item.field_150901_e.getObject(429, "magicWand", block); 
+        Item.itemRegistry.getObject(429, "magicWand", block); 
   }
   public static MagicWand instance = new MagicWand();
 	
@@ -68,9 +68,9 @@ public class MagicWand
         	this.setCreativeTab(Tab.tab);
     	}
 
-    	public int getDuration(ItemStack par1ItemStack) {
-        	return 72000;
-    	}
+    	//public int getDuration(ItemStack par1ItemStack) {
+        //	return 72000;
+    	//}
 
     	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, final EntityPlayer par3EntityPlayer) {
         	boolean flag;
