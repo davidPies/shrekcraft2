@@ -1,13 +1,13 @@
-1, implemented quotes during fight initiations
-    A. ogres are like onions
-    B. I'm making waffles!
-    
-2. New items
-   A. Shrek's head (very rare drop)
-   B. ShrShrek paper mache mask (from that shrek play)
-      made with paper and green dye. "ppp" "pgp" "   "
+1, implemented quotes during fight initiations✔
+    A. ogres are like onions ✔
+    B. I'm making waffles!❌
+    
+2. New items✔
+   A. Shrek's head (very rare drop)❌
+   B. ShrShrek paper mache mask (from that shrek play)❌
+      made with paper and green dye. "ppp" "pgp" "   "❌
    
 3. Other
-   A. Increase gingy's movement speed
-   B. Add shrek roar on death
-   C. Donkey's waffles quote is ambient noise.
+   A. Increase gingy's movement speed❗
+   B. Add shrek roar on death❗
+   C. Donkey's waffles quote is ambient noise.❌
